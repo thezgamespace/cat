@@ -1,0 +1,348 @@
+{
+    "sessionId": 2,
+    "startTime": "2025-01-07 12:00:00",
+    "endTime": "2025-01-08 23:59:59",
+    "status": "Current Session",
+    "canVote": true,
+    "canPlay": true,
+    "statusId": 3,
+    "poolTiers": [
+        {
+            "tierId": 0,
+            "poolPercent": 0.2,
+            "hpMoreThan": 0.75,
+            "hpEqualLess": 1
+        },
+        {
+            "tierId": 1,
+            "poolPercent": 0.4,
+            "hpMoreThan": 0.50,
+            "hpEqualLess": 0.75
+        },
+        {
+            "tierId": 2,
+            "poolPercent": 0.6,
+            "hpMoreThan": 0.25,
+            "hpEqualLess": 0.50
+        },
+        {
+            "tierId": 3,
+            "poolPercent": 0.8,
+            "hpMoreThan": 0,
+            "hpEqualLess": 0.25
+        },
+        {
+            "tierId": 4,
+            "poolPercent": 1,
+            "hpMoreThan": -1,
+            "hpEqualLess": 0
+        }
+    ],
+    "bullets": [
+        {
+            "name": "Stone",
+            "bulletLvl": 1,
+            "bulletId": 0,
+            "price": 1,
+            "powers": [
+                {
+                    "power": 1,
+                    "gap": 2
+                },
+                {
+                    "power": 2,
+                    "gap": 2
+                },
+                {
+                    "power": 3,
+                    "gap": 2
+                },
+                {
+                    "power": 4,
+                    "gap": 2
+                },
+                {
+                    "power": 5,
+                    "gap": 1
+                },
+                {
+                    "power": 4,
+                    "gap": 2
+                },
+                {
+                    "power": 3,
+                    "gap": 2
+                },
+                {
+                    "power": 2,
+                    "gap": 2
+                },
+                {
+                    "power": 1,
+                    "gap": 2
+                }
+            ],
+            "speed": 4500
+        },
+        {
+            "name": "Rock",
+            "bulletLvl": 2,
+            "bulletId": 1,
+            "price": 1,
+            "powers": [
+                {
+                    "power": 2,
+                    "gap": 1
+                },
+                {
+                    "power": 3,
+                    "gap": 2
+                },
+                {
+                    "power": 4,
+                    "gap": 3
+                },
+                {
+                    "power": 5,
+                    "gap": 2
+                },
+                {
+                    "power": 7,
+                    "gap": 1
+                },
+                {
+                    "power": 5,
+                    "gap": 2
+                },
+                {
+                    "power": 4,
+                    "gap": 3
+                },
+                {
+                    "power": 3,
+                    "gap": 2
+                },
+                {
+                    "power": 2,
+                    "gap": 1
+                }
+            ],
+            "speed": 3500
+        },
+        {
+            "name": "Boulder",
+            "bulletLvl": 3,
+            "bulletId": 2,
+            "price": 10,
+            "powers": [
+                {
+                    "power": 3,
+                    "gap": 1
+                },
+                {
+                    "power": 4,
+                    "gap": 2
+                },
+                {
+                    "power": 5,
+                    "gap": 3
+                },
+                {
+                    "power": 7,
+                    "gap": 3
+                },
+                {
+                    "power": 10,
+                    "gap": 3
+                },
+                {
+                    "power": 7,
+                    "gap": 3
+                },
+                {
+                    "power": 5,
+                    "gap": 3
+                },
+                {
+                    "power": 4,
+                    "gap": 2
+                },
+                {
+                    "power": 3,
+                    "gap": 1
+                }
+            ],
+            "speed": 2500
+        }
+    ],
+    "towers": [
+        {
+            "name": "Tower A",
+            "tier": "Bronze & Above",
+            "eligible": true,
+            "towerLvl": 3,
+            "fullPool": 10000,
+            "towerId": 0,
+            "totalHp": 20000,
+            "hp": 2000,
+            "defeated": false,
+            "canPlay": true,
+            "currentTierPercent": 0.75,
+            "currentPool": 2000,
+            "nextTierPercent": 0.75,
+            "nextPool": 4000,
+            "resultTierPercent": 0.75,
+            "resultPool": 7500,
+            "votes": 3,
+            "attackBefore": false,
+            "voteTarget": true
+        },
+        {
+            "name": "Tower B",
+            "tier": "Bronze & Above",
+            "eligible": true,
+            "towerLvl": 2,
+            "fullPool": 3000,
+            "towerId": 1,
+            "totalHp": 20000,
+            "hp": 13000,
+            "defeated": false,
+            "canPlay": true,
+            "currentTierPercent": 0.75,
+            "currentPool": 7500,
+            "nextTierPercent": 0.75,
+            "nextPool": 7500,
+            "resultTierPercent": 0.75,
+            "resultPool": 7500,
+            "votes": 3,
+            "attackBefore": false,
+            "voteTarget": true
+        },
+        {
+            "name": "Tower B",
+            "tier": "Bronze & Above",
+            "eligible": true,
+            "towerLvl": 2,
+            "fullPool": 3000,
+            "towerId": 2,
+            "totalHp": 6000,
+            "hp": 1000,
+            "defeated": false,
+            "canPlay": true,
+            "currentTierPercent": 0.75,
+            "currentPool": 7500,
+            "nextTierPercent": 0.75,
+            "nextPool": 7500,
+            "resultTierPercent": 0.75,
+            "resultPool": 7500,
+            "votes": 3,
+            "attackBefore": false,
+            "voteTarget": true
+        },
+        {
+            "name": "Tower C",
+            "tier": "Norm & Bronze",
+            "eligible": true,
+            "towerLvl": 1,
+            "fullPool": 1000,
+            "towerId": 3,
+            "totalHp": 2000,
+            "hp": 1800,
+            "defeated": false,
+            "canPlay": true,
+            "currentTierPercent": 0.75,
+            "currentPool": 7500,
+            "nextTierPercent": 0.75,
+            "nextPool": 7500,
+            "resultTierPercent": 0.75,
+            "resultPool": 7500,
+            "votes": 3,
+            "attackBefore": false,
+            "voteTarget": true
+        },
+        {
+            "name": "Tower C",
+            "tier": "Norm & Bronze",
+            "eligible": true,
+            "towerLvl": 1,
+            "fullPool": 1000,
+            "towerId": 4,
+            "totalHp": 2000,
+            "hp": 300,
+            "defeated": false,
+            "canPlay": true,
+            "currentTierPercent": 0.75,
+            "currentPool": 7500,
+            "nextTierPercent": 0.75,
+            "nextPool": 7500,
+            "resultTierPercent": 0.75,
+            "resultPool": 7500,
+            "votes": 3,
+            "attackBefore": false,
+            "voteTarget": true
+        },
+        {
+            "name": "Tower C",
+            "tier": "Norm & Bronze",
+            "eligible": true,
+            "towerLvl": 1,
+            "fullPool": 1000,
+            "towerId": 5,
+            "totalHp": 2000,
+            "hp": 600,
+            "defeated": false,
+            "canPlay": true,
+            "currentTierPercent": 0.75,
+            "currentPool": 7500,
+            "nextTierPercent": 0.75,
+            "nextPool": 7500,
+            "resultTierPercent": 0.75,
+            "resultPool": 7500,
+            "votes": 3,
+            "attackBefore": false,
+            "voteTarget": true
+        },
+        {
+            "name": "Tower C",
+            "tier": "Norm & Bronze",
+            "eligible": true,
+            "towerLvl": 1,
+            "fullPool": 1000,
+            "towerId": 6,
+            "totalHp": 2000,
+            "hp": 100,
+            "defeated": false,
+            "canPlay": true,
+            "currentTierPercent": 0.75,
+            "currentPool": 7500,
+            "nextTierPercent": 0.75,
+            "nextPool": 7500,
+            "resultTierPercent": 0.75,
+            "resultPool": 7500,
+            "votes": 3,
+            "attackBefore": false,
+            "voteTarget": true
+        },
+        {
+            "name": "Tower C",
+            "tier": "Norm & Bronze",
+            "eligible": true,
+            "towerLvl": 1,
+            "fullPool": 1000,
+            "towerId": 7,
+            "totalHp": 2000,
+            "hp": 700,
+            "defeated": false,
+            "canPlay": true,
+            "currentTierPercent": 0.75,
+            "currentPool": 7500,
+            "nextTierPercent": 0.75,
+            "nextPool": 7500,
+            "resultTierPercent": 0.75,
+            "resultPool": 7500,
+            "votes": 3,
+            "attackBefore": false,
+            "voteTarget": true
+        }
+    ]
+}

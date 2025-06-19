@@ -1,0 +1,16 @@
+{
+    "username": "jack****",
+    "userId": 0,
+    "isKiller": true,
+    "killBy": "jack****",
+    "killed": false,
+    "name": "Tower A",
+    "towerLvl": 3,
+    "towerId": 0,
+    "totalHp": 20000,
+    "hp": 100,
+    "bulletLvl": 1,
+    "bulletId": 0,
+    "power": 40,
+    "attackId":0
+}

@@ -1,0 +1,25 @@
+%!Adobe-FontList 1.18
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:DiloWorldRegular
+FamilyName:Dilo World
+StyleName:Regular
+FullName:Dilo World
+MenuName:Dilo World
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Downloads\Yarn Untangle\Yarn Untangle\Font\DiloWorld.ttf
+DataFormat:sfntData
+hasSVG:no
+FileLength:182036
+FileModTime:1605265087
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Dilo World
+NameArray:0,Win,1,Dilo World
+%EndFont
+

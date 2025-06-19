@@ -1,0 +1,49 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "finger",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 3,
+  "sample": 60,
+  "speed": 0.8,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            102.139,
+            -62.166,
+            0
+          ]
+        },
+        {
+          "frame": 0.5,
+          "value": [
+            59.858,
+            -18.866,
+            0
+          ]
+        },
+        {
+          "frame": 1,
+          "value": [
+            102.139,
+            -62.166,
+            0
+          ]
+        },
+        {
+          "frame": 3,
+          "value": [
+            102.139,
+            -62.166,
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,54 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "title",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 0.1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "position": []
+    },
+    "paths": {
+      "cloud0": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -47.545
+            },
+            {
+              "frame": 0.5,
+              "value": -113.349
+            },
+            {
+              "frame": 1,
+              "value": -47.545
+            }
+          ]
+        }
+      },
+      "cloud1": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 56.113
+            },
+            {
+              "frame": 0.5,
+              "value": 117.35
+            },
+            {
+              "frame": 1,
+              "value": 56.113
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

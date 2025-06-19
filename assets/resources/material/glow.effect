@@ -1,0 +1,94 @@
+// Copyright (c) 2017-2018 Xiamen Yaji Software Co., Ltd.
+
+CCEffect %{
+  techniques:
+  - passes:
+    - vert: vs
+      frag: fs
+      blendState:
+        targets:
+        - blend: true
+      rasterizerState:
+        cullMode: none
+      properties:
+        texture: { value: white }
+        alphaThreshold: { value: 0.5 }
+}%
+
+
+CCProgram vs %{
+  precision highp float;
+
+  #include <cc-global>
+  #include <cc-local>
+
+  in vec3 a_position;
+  in vec4 a_color;
+  out vec4 v_color;
+
+  #if USE_TEXTURE
+  in vec2 a_uv0;
+  out vec2 v_uv0;
+  #endif
+
+  void main () {
+    vec4 pos = vec4(a_position, 1);
+
+    #if CC_USE_MODEL
+    pos = cc_matViewProj * cc_matWorld * pos;
+    #else
+    pos = cc_matViewProj * pos;
+    #endif
+
+    #if USE_TEXTURE
+    v_uv0 = a_uv0;
+    #endif
+
+    v_color = a_color;
+
+    gl_Position = pos;
+  }
+}%
+
+CCProgram fs %{
+  precision highp float;
+
+  #include <alpha-test>
+  #include <texture>
+
+  in vec4 v_color;
+
+  #if USE_TEXTURE
+  in vec2 v_uv0;
+  uniform sampler2D texture;
+  #endif
+
+  void main () {
+    vec4 originalColor = vec4(1, 1, 1, 1);
+
+    #if USE_TEXTURE
+      CCTexture(texture, v_uv0, originalColor);
+    #endif
+
+    originalColor *= v_color;
+
+    ALPHA_TEST(originalColor);
+
+    // Glow parameters
+    float glowStrength = 0.5;  // Adjust the strength of the glow
+    float glowSize = 0.02;     // Adjust the size of the glow
+
+    // Calculate the Gaussian distribution for the glow
+    float d = length(v_uv0 - vec2(0.5, 0.5));
+    vec3 glow = vec3(1.0) * smoothstep(0.5 - glowSize, 0.5 + glowSize, 1.0 - d) * glowStrength;
+
+    // Combine the original color with the glow
+    vec4 finalColor = originalColor + vec4(glow, 0.0);
+
+    #if USE_BGRA
+      gl_FragColor = finalColor.bgra;
+    #else
+      gl_FragColor = finalColor.rgba;
+    #endif
+  }
+}%

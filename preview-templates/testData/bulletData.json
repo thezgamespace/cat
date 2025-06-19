@@ -1,0 +1,11 @@
+{
+    "name": "Stone",
+    "bulletLvl":1,
+    "bulletId":0,
+    "price":1,
+    "power":[1,1,1,1,1,2,2,2,3,3,4,5,4,3,3,2,2,2,1,1,1,1,1],
+    "speed":2500,
+    "towerId":0,
+    "attackId":0,
+    "token":10
+}

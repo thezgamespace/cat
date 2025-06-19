@@ -1,0 +1,120 @@
+{
+    "sessionId": 1,
+    "towerId": 1,
+    "ownResult": {
+        "rank": 23,
+        "username": "MiniGameTest",
+        "totalDamage": 5,
+        "damagePercent": 0.1,
+        "pool": 714
+    },
+    "totalPage": 10,
+    "pageId": 1,
+    "leaderboard": [
+        {
+            "rank": 1,
+            "username": "Angeline",
+            "totalDamage": 5,
+            "damagePercent": 0.1,
+            "pool": 714
+        },
+        {
+            "rank": 1,
+            "username": "Angeline",
+            "totalDamage": 5,
+            "damagePercent": 0.1,
+            "pool": 714
+        },
+        {
+            "rank": 1,
+            "username": "Angeline",
+            "totalDamage": 5,
+            "damagePercent": 0.1,
+            "pool": 714
+        },
+        {
+            "rank": 1,
+            "username": "Angeline",
+            "totalDamage": 5,
+            "damagePercent": 0.1,
+            "pool": 714
+        },
+        {
+            "rank": 1,
+            "username": "Angeline",
+            "totalDamage": 5,
+            "damagePercent": 0.1,
+            "pool": 714
+        },
+        {
+            "rank": 1,
+            "username": "Angeline",
+            "totalDamage": 5,
+            "damagePercent": 0.1,
+            "pool": 714
+        },
+        {
+            "rank": 1,
+            "username": "Angeline",
+            "totalDamage": 5,
+            "damagePercent": 0.1,
+            "pool": 714
+        },
+        {
+            "rank": 1,
+            "username": "Angeline",
+            "totalDamage": 5,
+            "damagePercent": 0.1,
+            "pool": 714
+        },
+        {
+            "rank": 1,
+            "username": "Angeline",
+            "totalDamage": 5,
+            "damagePercent": 0.1,
+            "pool": 714
+        },
+        {
+            "rank": 1,
+            "username": "Angeline",
+            "totalDamage": 5,
+            "damagePercent": 0.1,
+            "pool": 714
+        },
+        {
+            "rank": 1,
+            "username": "Angeline",
+            "totalDamage": 5,
+            "damagePercent": 0.1,
+            "pool": 714
+        },
+        {
+            "rank": 1,
+            "username": "Angeline",
+            "totalDamage": 5,
+            "damagePercent": 0.1,
+            "pool": 714
+        },
+        {
+            "rank": 1,
+            "username": "Angeline",
+            "totalDamage": 5,
+            "damagePercent": 0.1,
+            "pool": 714
+        },
+        {
+            "rank": 1,
+            "username": "Angeline",
+            "totalDamage": 5,
+            "damagePercent": 0.1,
+            "pool": 714
+        },
+        {
+            "rank": 1,
+            "username": "Angeline",
+            "totalDamage": 5,
+            "damagePercent": 0.1,
+            "pool": 714
+        }
+    ]
+}

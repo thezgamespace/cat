@@ -1,0 +1,29 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "shine",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.0833333333333333,
+  "sample": 60,
+  "speed": 0.5,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "x": [
+        {
+          "frame": 0,
+          "value": -167.201
+        },
+        {
+          "frame": 0.8333333333333334,
+          "value": 152.869
+        },
+        {
+          "frame": 1.0833333333333333,
+          "value": 152.869
+        }
+      ]
+    }
+  },
+  "events": []
+}

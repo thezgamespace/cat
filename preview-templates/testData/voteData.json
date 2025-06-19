@@ -1,0 +1,6 @@
+{ 
+    "action":"VOTE",
+    "towerId": 0,
+    "sessionId":  1,
+    "voted": true
+}

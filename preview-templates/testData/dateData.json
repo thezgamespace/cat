@@ -1,0 +1,32 @@
+{
+    "error": 200,
+    "message": "Success",
+    "data": [
+        {
+            "sessionId": 1,
+            "startTime": "2025-03-07 12:00:00",
+            "endTime": "2025-03-14 23:59:59",
+            "status": "Past Session",
+            "canPlay": false,
+            "statusId": 3
+          },
+          {
+            "sessionId": 2,
+            "startTime": "2025-03-15 12:00:00",
+            "endTime": "2025-03-21 23:59:59",
+            "status": "Current Session",
+            "canPlay": true,
+            "statusId": 1,
+            "isCurrentWeek":true
+          },
+          {
+            "sessionId": 3,
+            "startTime": "2025-03-22 12:00:00",
+            "endTime": "2025-03-28 23:59:59",
+            "status": "Future Session",
+            "canPlay": false,
+            "statusId": 2
+          }
+      
+    ]
+}

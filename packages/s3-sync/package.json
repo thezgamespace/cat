@@ -1,0 +1,16 @@
+{
+  "name": "s3-sync",
+  "version": "0.0.1",
+  "description": "A simple extension",
+  "author": "Cocos Creator",
+  "main": "main.js",
+  "main-menu": {
+    "CocosJS Studio/Upload Build Files to S3 | s3-sync v1.0.0": {
+      "message": "s3-sync:upload-builds"
+    }
+  },
+  "dependencies": {
+    "aws-sdk": "^2.720.0",
+    "mime-types": "^2.1.27"
+  }
+}

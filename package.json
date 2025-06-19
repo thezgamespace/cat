@@ -1,0 +1,29 @@
+{
+  "name": "robot-awake",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CocosJS-Studio/robot-awake.git"
+  },
+  "author": "cocosjs.pef",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CocosJS-Studio/robot-awake/issues"
+  },
+  "homepage": "https://github.com/CocosJS-Studio/robot-awake#readme",
+  "dependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-file-inline": "^2.2.3",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-javascript-obfuscator": "^1.1.6",
+    "gulp-zip": "^5.1.0",
+    "vinyl-sourcemaps-apply": "^0.2.1"
+  }
+}
