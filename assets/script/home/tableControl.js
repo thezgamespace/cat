@@ -47,6 +47,7 @@ cc.Class({
 
         this.initPercent();
         this.initPrize();
+        this.iniHeaderBtn();
     },
 
     updateInput($inputText) {
@@ -95,6 +96,25 @@ cc.Class({
 
     },
 
+
+    iniHeaderBtn() {
+
+
+        this.headerBtns = [];
+
+        var children = this.table.children;
+        for (var i = 0; i < children.length; i++) {
+            var headerBtn = children[i].getComponent("headerBtn")
+
+            headerBtn.init(i, this)
+
+            this.headerBtns.push(headerBtn);
+
+
+
+        }
+
+    },
     initPercent() {
 
         this.percentCells = [];
