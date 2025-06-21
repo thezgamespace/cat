@@ -35,11 +35,11 @@ cc.Class({
 
 
         this.emitPoint = cc.find("emitPoint")
-        this.postDateData();
+        // this.postDateData();
         this.emitPoint.on(SOCKET_ENUM.SOCKET_MESSAGE, this.socketMessage.bind(this))
         this.emitPoint.on(GAME_ACTION.POST_DATE_DATA, this.postDateData.bind(this));
 
-        cc.game.on(cc.game.EVENT_SHOW, this.postDateData.bind(this));
+        // cc.game.on(cc.game.EVENT_SHOW, this.postDateData.bind(this));
 
         // this.looper = setInterval(this.postDateData.bind(this),10000);
     },

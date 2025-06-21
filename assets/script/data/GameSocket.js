@@ -13,7 +13,6 @@ const GameSocket = cc.Class({
         instance: null
     },
     onLoad() {
-        console.log("SOCKET!!!")
         this.failCount = 0;
         // this.serverURL = "wss://socket.hiso33games.com"
 
@@ -34,7 +33,7 @@ const GameSocket = cc.Class({
         this.emitPoint.on(GAME_ACTION.SESSION_SUCCESS, this.getSessionData.bind(this));
 
 
-        this.setupWebSocket();
+        // this.setupWebSocket();
     },
     getSessionData($data) {
 

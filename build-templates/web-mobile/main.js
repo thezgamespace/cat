@@ -1,43 +1,25 @@
-var im = {
-    "frames": [
+var im = {"frames": [
 
-        {
-            "filename": "barLeft.png",
-            "frame": { "x": 504, "y": 1, "w": 79, "h": 105 },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": { "x": 0, "y": 0, "w": 79, "h": 105 },
-            "sourceSize": { "w": 79, "h": 105 },
-            "pivot": { "x": 0.5, "y": 0.5 }
-        },
-        {
-            "filename": "barRight.png",
-            "frame": { "x": 585, "y": 1, "w": 79, "h": 105 },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": { "x": 0, "y": 0, "w": 79, "h": 105 },
-            "sourceSize": { "w": 79, "h": 105 },
-            "pivot": { "x": 0.5, "y": 0.5 }
-        },
-        {
-            "filename": "logo.png",
-            "frame": { "x": 1, "y": 1, "w": 501, "h": 114 },
-            "rotated": false,
-            "trimmed": true,
-            "spriteSourceSize": { "x": 3, "y": 0, "w": 501, "h": 114 },
-            "sourceSize": { "w": 504, "h": 114 },
-            "pivot": { "x": 0.5, "y": 0.5 }
-        }],
-    "meta": {
-        "app": "https://www.codeandweb.com/texturepacker",
-        "version": "1.0",
-        "image": "loading.png",
-        "format": "RGBA8888",
-        "size": { "w": 665, "h": 116 },
-        "scale": "1",
-        "smartupdate": "$TexturePacker:SmartUpdate:7cb891c271fed1a51a5d7648fb2f382d:be76d0efef526cc20845f739cd979d53:5294b8b30e478db5089d68a09bebcee6$"
-    }
+{
+	"filename": "loadBg.jpg",
+	"frame": {"x":1,"y":1,"w":917,"h":917},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":917,"h":917},
+	"sourceSize": {"w":917,"h":917},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "loading.png",
+	"format": "RGBA8888",
+	"size": {"w":919,"h":919},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7c7f29b73d782106e520b371a3281837:d8cac8787c9d42a82278276b63f6e9bd:5294b8b30e478db5089d68a09bebcee6$"
 }
+}
+
 
 
 var percent = 0;
@@ -64,7 +46,7 @@ function getFrame(filename) {
     return im.frames.filter((item) => { return item.filename == filename })[0]
 }
 
-var barY = gameH * 0.65
+var barY = gameH * 0.78
 var loadBar = new Image;
 loadBar.src = "bar.png";
 
@@ -104,33 +86,27 @@ function updateLoadingBar() {
         return
     }
 
-    var barW = 851;
-    var barH = 76;
+    var barW = 466;
+    var barH = 25;
 
+
+    drawImage(getFrame("loadBg.jpg"), gameW * 0.5, gameH * 0.45, 0.5, 0.5)
     ctx.drawImage(loadBase,
         gameW * 0.5 - barW * 0.5, barY)
 
     ctx.drawImage(loadBar,
-        0, 0, 851 * percent, barH,
+        0, 0, 466 * percent, barH,
         gameW * 0.5 - barW * 0.5, barY, barW * percent, barH)
 
 
-    ctx.save()
 
-
-
-    drawImage(getFrame("logo.png"), gameW * 0.5, gameH * 0.3, 0.5, 0.5)
-
-    drawImage(getFrame("barLeft.png"), gameW * 0.5 - barW * 0.48, barY+35, 0.5, 0.5)
-    drawImage(getFrame("barRight.png"), gameW * 0.5 + barW * 0.48, barY+35, 0.5, 0.5)
     ctx.save()
     ctx.globalAlpha = p;
     ctx.font = "25px Eczar-ExtraBold"; // Set the font size and family
     ctx.textAlign = "center";
-    ctx.fillStyle = "white"; // Set the text color
-    ctx.fillText(".....Preparing the Catapults.....", gameW * 0.5, gameH * 0.79); // Draw the text
+    ctx.fillStyle = "black"; // Set the text color
+    ctx.fillText(".....Lucky Cat is Loading.....", gameW * 0.5, gameH * 0.83); // Draw the text
 
-    ctx.restore()
     ctx.restore()
 }
 

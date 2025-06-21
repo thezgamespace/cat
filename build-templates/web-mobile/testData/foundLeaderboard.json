@@ -1,0 +1,18 @@
+{
+    "sessionId": 1,
+    "towerId": 1,
+    "totalPage": 10,
+    "pageId": 1,
+    "leaderboard": [
+        {
+            "username": "gamingsoft",
+            "rank": 1,
+            "points": 100,
+            "prize": 8000,
+            "to": 660000,
+            "top": 60,
+            "wp": 40,
+            "tp": 100
+        }
+    ]
+}
