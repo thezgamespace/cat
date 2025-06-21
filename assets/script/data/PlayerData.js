@@ -40,13 +40,13 @@ const PlayerData = cc.Class({
         this.emitPoint = cc.find("emitPoint")
         this.emitPoint.on(GAME_ACTION.SUBMIT_NAME_POST, this.getPlayerData.bind(this))
         this.emitPoint.on(GAME_ACTION.BUY_SUCCESS, this.updateBalance.bind(this))
-        this.emitPoint.on(GAME_ACTION.TOWER_DEAD, this.postGetPlayerData.bind(this))
+        // this.emitPoint.on(GAME_ACTION.TOWER_DEAD, this.postGetPlayerData.bind(this))
 
-        this.emitPoint.on(GAME_ACTION.RELOAD_PLAYER, this.postGetPlayerData.bind(this))
+        // this.emitPoint.on(GAME_ACTION.RELOAD_PLAYER, this.postGetPlayerData.bind(this))
 
         // cc.game.on(cc.game.EVENT_SHOW, this.postGetPlayerData.bind(this));
 
-        this.emitPoint.on(SOCKET_ENUM.SOCKET_MESSAGE, this.socketMessage.bind(this))
+        // this.emitPoint.on(SOCKET_ENUM.SOCKET_MESSAGE, this.socketMessage.bind(this))
 
         // this.postGetPlayerData()
 

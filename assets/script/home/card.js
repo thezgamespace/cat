@@ -43,7 +43,6 @@ cc.Class({
         this.iconIndex = undefined;
         this.num = undefined;
 
-        this.node.getComponent(cc.Sprite).spriteFrame = this.offFrame
 
 
         if (this.symbol.active == true) {
@@ -53,15 +52,18 @@ cc.Class({
                 .to(0.1, { scaleX: 0 })
                 .call(() => {
 
+                    this.node.getComponent(cc.Sprite).spriteFrame = this.offFrame
+
                     this.symbol.active = false;
                     this.cardText.node.active = false;
-
                 })
                 .to(0.1, { scaleX: 1 })
                 .start()
 
         } else {
 
+
+            this.node.getComponent(cc.Sprite).spriteFrame = this.offFrame
 
 
             this.symbol.active = false;

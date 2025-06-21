@@ -36,8 +36,9 @@ cc.Class({
         if (main) {
             this.storage = main.getComponent("storage");
             if (this.storage && this.storage.storageData) {
-                cc.audioEngine.setMusicVolume(this.storage.storageData.music);
-                cc.audioEngine.setEffectsVolume(this.storage.storageData.sfx);
+                cc.audioEngine.setMusicVolume(this.storage.storageData.all);
+                cc.audioEngine.setEffectsVolume(this.storage.storageData.all);
+
             }
         }
         this.playBgm();
@@ -65,6 +66,13 @@ cc.Class({
         // set finish callback
         cc.audioEngine.setFinishCallback(id, this.removeAudio.bind(this, id));
     },
+    stopBgm() {
+
+        console.log("stop")
+        cc.audioEngine.stopMusic(this.bgm);
+        this.removeAudio(this.bgm)
+    },
+
 
 
     playSfx(sfx) {

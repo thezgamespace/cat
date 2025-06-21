@@ -149,7 +149,9 @@
       "__id__": 1
     },
     "_enabled": true,
-    "bgm": null,
+    "bgm": {
+      "__uuid__": "bd6895b8-9b61-4258-85e0-9e1f078b09c3"
+    },
     "click": {
       "__uuid__": "cebbff49-d28f-459d-9fd3-57ce6576b38c"
     },
