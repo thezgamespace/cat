@@ -21,6 +21,7 @@ cc.Class({
 
     onLoad() {
 
+        this.tierNames = ["mega", "ultra", "super", "quite", "abit"]
         this.emitPoint = cc.find("emitPoint")
         this.emitPoint.on(GAME_ACTION.CHOOSE_TIER, this.changeFrame.bind(this))
         this.emitPoint.on(GAME_ACTION.INPUT_CHANGED, this.reset.bind(this))
@@ -31,12 +32,29 @@ cc.Class({
     init($index, $numBox) {
         this.btnIndex = $index;
         this.numBox = $numBox;
+
+        this.tierName = this.tierNames[$index]
     },
 
 
-    reset($btn) {
+    reset($input, $pool) {
 
         this.node.getComponent(cc.Sprite).spriteFrame = this.onFrame;
+
+
+        if ($input == 0) {
+
+
+            this.node.active = true;
+
+        } else {
+
+
+            this.node.active = $pool[this.tierName] == 0 ? false : true;
+
+        }
+
+
     },
 
 

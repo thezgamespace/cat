@@ -25,6 +25,7 @@ cc.Class({
         this.emitPoint = cc.find("emitPoint")
         this.emitPoint.on(GAME_ACTION.CHOOSE_TIER, this.showTier.bind(this))
         this.emitPoint.on(GAME_ACTION.CHOOSE_RECIPIENT, this.showRecipient.bind(this))
+        this.emitPoint.on(GAME_ACTION.INPUT_CHANGED, this.idle.bind(this))
 
 
     },
@@ -42,18 +43,27 @@ cc.Class({
     },
 
 
+    idle() {
+
+        this.bg.active = false;
+        this.prizeText.node.color = this.offColour;
+        // this.eachText.node.color = this.offColour;
+        this.textBox.opacity=255;
+    },
     show() {
 
         this.bg.active = true;
         this.prizeText.node.color = this.onColour;
-        this.eachText.node.color = this.onColour;
+        // this.eachText.node.color = this.onColour;
+        this.textBox.opacity=255;
     },
 
     hide() {
 
         this.bg.active = false;
         this.prizeText.node.color = this.offColour;
-        this.eachText.node.color = this.offColour;
+        // this.eachText.node.color = this.offColour;
+        this.textBox.opacity=255*0.3;
     },
     showRecipient($recipientBtn) {
         if (this.isTargetTier == true) {
@@ -77,6 +87,12 @@ cc.Class({
         this.prizeText.string = "0";
         this.bg.active = false;
         this.textBox.active = false;
+
+        if (this.row == 0) {
+            this.eachText.node.active = false;
+        }
+
+        this.tierName = $numBox.tierNames[$col]
     },
 
     setPrize($prize) {

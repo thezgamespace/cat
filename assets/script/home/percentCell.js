@@ -13,6 +13,7 @@ cc.Class({
     properties: {
         percentText: cc.Label,
         textBox: cc.Node,
+        bg: cc.Node,
 
     },
 
@@ -20,8 +21,15 @@ cc.Class({
 
     onLoad() {
 
+        this.bg.active = false;
         this.emitPoint = cc.find("emitPoint")
+        this.emitPoint.on(GAME_ACTION.CHOOSE_TIER, this.showTier.bind(this))
+        this.emitPoint.on(GAME_ACTION.INPUT_CHANGED, this.idle.bind(this))
+  },
 
+
+    idle() {
+            this.bg.active = false;
 
     },
 
@@ -33,6 +41,13 @@ cc.Class({
     },
 
 
+    showTier($tierBtn) {
+        if ($tierBtn.btnIndex == this.btnIndex) {
+            this.bg.active = true;
+        } else {
+            this.bg.active = false;
+        }
+    },
 
 
     setPercent($percent) {

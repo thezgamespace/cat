@@ -41,7 +41,7 @@ cc.Class({
 
             }
         }
-        this.playBgm();
+        // this.playBgm();
     },
 
 

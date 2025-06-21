@@ -12,6 +12,7 @@ cc.Class({
 
     properties: {
 
+        table: cc.Node,
         percentBox: cc.Node,
         prizeBox0: cc.Node,
         prizeBox1: cc.Node,
@@ -28,18 +29,18 @@ cc.Class({
         this.tierNames = ["mega", "ultra", "super", "quite", "abit"]
 
         this.emptyPool = {
-            min: 0, max: 0, mega: 0, ultra: 0, super: 0, quite: 0, abit: 0
+            min: 0, max: 0, mega: 0, ultra: 0, super: 0, quite: 0, abit: 0, table: 437
         }
 
         this.pools = [
             {
-                min: 300, max: 490, mega: 0.5, ultra: 0.3, super: 0.2, quite: 0, abit: 0
+                min: 300, max: 490, mega: 0.5, ultra: 0.3, super: 0.2, quite: 0, abit: 0, table: 257
             },
             {
-                min: 500, max: 990, mega: 0.45, ultra: 0.3, super: 0.15, quite: 0.1, abit: 0
+                min: 500, max: 990, mega: 0.45, ultra: 0.3, super: 0.15, quite: 0.1, abit: 0, table: 341
             },
             {
-                min: 1000, max: -1, mega: 0.4, ultra: 0.25, super: 0.2, quite: 0.1, abit: 0.05
+                min: 1000, max: -1, mega: 0.4, ultra: 0.25, super: 0.2, quite: 0.1, abit: 0.05, table: 437
             }
 
         ]
@@ -53,9 +54,10 @@ cc.Class({
         this.fullPool = parseInt($inputText) || 0;
 
         if (this.fullPool % 10 != 0) { this.fullPool = 0 }
+        if (this.fullPool < 300) { this.fullPool = 0 }
         this.calculatePercent();
 
-        this.emitPoint.emit(GAME_ACTION.INPUT_CHANGED, this.fullPool)
+        this.emitPoint.emit(GAME_ACTION.INPUT_CHANGED, this.fullPool, this.targetPool)
     },
 
     calculatePercent() {
@@ -69,7 +71,7 @@ cc.Class({
 
 
         this.targetPool = this.findPool[0] || this.emptyPool
-
+        this.table.width = this.targetPool.table;
 
         this.finalPool = []
         this.tierNames.forEach((tierName, i) => {
